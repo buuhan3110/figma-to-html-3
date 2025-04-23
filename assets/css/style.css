@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --header-bg: #10375c;
+  --primary-color: #2e80ce;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -10,3 +15,102 @@ body {
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
 }
+
+/* ============================= COMMON ============================= */
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.8rem;
+  min-width: 205px;
+  line-height: 60px;
+  text-align: center;
+  font-style: normal;
+  background: var(--primary-color);
+  font-weight: 400;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* ============================= HEADER ============================= */
+
+.header {
+  min-height: 100vh; /* chiều cao nhỏ nhất, đảm bảo nền luôn chiếm hết tầm nhìn ban đầu */
+  background-color: var(--header-bg);
+}
+
+.header-top {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===> logo */
+
+.logo {
+  display: flex;
+}
+
+/* ===> navbar */
+
+.navbar__list {
+  display: flex;
+}
+
+.header__action--login,
+.navbar__link {
+  padding: 8px 21px;
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+}
+
+.header__action--login:hover,
+.navbar__link:hover,
+.navbar__link--active {
+  color: #fff;
+  text-shadow: 1px 0 0 #fff;
+}
+
+.navbar__link--active::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  top: -3px;
+  left: -8px;
+}
+
+/* ===> action */
+
+.header__action--login {
+  margin-right: 7px;
+}
+
+.header__action--signup {
+  min-width: 104px;
+  line-height: 44px;
+  border-radius: 22px;
+  font-size: 1.6rem;
+}
+
+/* =============================  ============================= */
