@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <!-- style css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <title>Figma to HTML - Project 3</title>
   </head>
   <body>
@@ -38,7 +40,7 @@
         <!-- header-top -->
         <div class="header-top">
           <!-- logo -->
-          <div class="logo">
+          <div class="header__logo logo">
             <img src="./assets/logo/logo.svg" alt="shine smile" class="logo__img" />
           </div>
           <!-- nav -->
@@ -88,6 +90,22 @@
         </section>
       </div>
     </header>
+
+    <!-- RESPONSIVE TABLETS - MOBILE -->
+    <div class="mobile-header">
+      <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="menu-checkbox" hidden />
+      <label for="menu-checkbox">
+        <svg class="menu-header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0
+          32 14.3 32 32z"
+            fill="currentColor"
+          />
+        </svg>
+      </label>
+      <!-- overlay -->
+      <label class="menu-overlay" for="menu-checkbox"></label>
+    </div>
 
     <!-- MAIN -->
     <main class="main">
