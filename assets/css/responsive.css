@@ -121,6 +121,34 @@
     width: 90%;
     text-align: start;
   }
+
+  /* khối work */
+  .work__list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  /* khối about */
+  .about__row {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .about__media {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .about__img--big {
+    width: 100%;
+    border-radius: 15px;
+    margin: 15px auto;
+  }
+  .about__img--small {
+    display: none;
+  }
+  .about-content {
+    width: 90%;
+    text-align: center;
+  }
 }
 
 /* Tablets */
